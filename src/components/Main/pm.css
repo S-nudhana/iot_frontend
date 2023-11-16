@@ -25,12 +25,17 @@ button {
     box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.05);
 }
 
+.btn {
+    margin-left: 1%;
+}
+
 .btnAll {
     width: 70px;
     background: #406695;
     color: white;
     border: 2px solid transparent;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .btnAll:hover {
@@ -46,6 +51,7 @@ button {
     color: white;
     border: 2px solid transparent;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .btnSIT:hover {
@@ -61,6 +67,7 @@ button {
     color: white;
     border: 2px solid transparent;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .btnCB2:hover {
@@ -76,6 +83,7 @@ button {
     color: white;
     border: 2px solid transparent;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .btnLx:hover {
@@ -93,7 +101,7 @@ section {
 }
 
 .buildingText {
-    margin-left: 1%;
+    margin-left: 2%;
     margin-bottom: 1%;
     color: #1e1e1e;
     font-size: 20px;
@@ -107,16 +115,16 @@ section {
 
 .card {
     align-items: center;
-    flex: 0 0 clac(33.33% - 30px);
+    flex: 0 0 clac(33.33% - 300px);
     max-width: calc (33.33% - 20px);
-    width: 32%;
+    width: 30%;
     background: white;
     box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 20px;
-    margin-bottom: 20px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-bottom: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
     transition: .3s;
     border: 2px solid transparent;
     cursor: pointer;
@@ -170,7 +178,7 @@ h1 {
     border-color: #3F6593;
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1430px) {
     section {
         padding-top: 3%;
     }
@@ -186,6 +194,8 @@ h1 {
     }
     .card {
         width: 48%;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 }
 

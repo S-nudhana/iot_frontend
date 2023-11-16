@@ -13,7 +13,7 @@
 }
 
 @media only screen and (max-width: 550px) {
-    .table h3 {
-        padding-left: 10%;
+    .table h2 {
+        font-size: 21px;
     }
 }
