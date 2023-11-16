@@ -1,0 +1,30 @@
+.navbar {
+    background-color: #3F6593;
+}
+
+.logo-image {
+    width: 250px;
+    height: auto;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 60px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1366px) {
+    .logo-image {
+        width: 450px;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .logo-image {
+        width: 300px;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}

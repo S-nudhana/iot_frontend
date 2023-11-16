@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    color: #1e1e1e;
+}
+
+.Pm {
+    max-width: 1450px;
+    width: 100%;
+    margin: auto;
+}
+
+.search {
+    padding-bottom: 2%;
+}
+
+button {
+    margin-left: 1%;
+    margin-bottom: 2%;
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.05);
+}
+
+.btnAll {
+    width: 70px;
+    background: #406695;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+.btnAll:hover {
+    border-color: #406695;
+    background: white;
+    color: #406695;
+    transition: .3s;
+}
+
+.btnSIT {
+    width: 70px;
+    background: #ecbd4d;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+.btnSIT:hover {
+    border-color: #ecbd4d;
+    background: white;
+    color: #ecbd4d;
+    transition: .3s;
+}
+
+.btnCB2 {
+    width: 70px;
+    background: #498bb9;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+.btnCB2:hover {
+    border-color: #498bb9;
+    background: white;
+    color: #498bb9;
+    transition: .3s;
+}
+
+.btnLx {
+    width: 70px;
+    background: #DF5935;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+.btnLx:hover {
+    border-color: #DF5935;
+    background: white;
+    color: #DF5935;
+    transition: .3s;
+}
+
+section {
+    padding-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buildingText {
+    margin-left: 1%;
+    margin-bottom: 1%;
+    color: #1e1e1e;
+    font-size: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    align-items: center;
+    flex: 0 0 clac(33.33% - 30px);
+    max-width: calc (33.33% - 20px);
+    width: 32%;
+    background: white;
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: .3s;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.SIT {
+    width: 70px;
+    background: #ecbd4d;
+    border-radius: 10px;
+}
+
+.CB {
+    width: 70px;
+    background: #498bb9;
+    border-radius: 10px;
+}
+
+.Lx {
+    width: 70px;
+    background: #DF5935;
+    border-radius: 10px;
+}
+
+.card .logo-image {
+    margin-left: 0%;
+    position: absolute;
+    width: 105px;
+    height: auto;
+    /* background-color: #FF6B6B; */
+    border-radius: 12px;
+}
+
+.text {
+    margin-left: 150px;
+}
+
+h4 {
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.card:hover {
+    border-color: #3F6593;
+}
+
+@media only screen and (max-width: 1500px) {
+    section {
+        padding-top: 3%;
+    }
+    .btn {
+        margin-left: 6%;
+    }
+    .buildingText {
+        margin-left: 7%;
+    }
+    .cards {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+    .card {
+        width: 48%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    button {
+        margin-left: 2%;
+        margin-bottom: 3%;
+    }
+    .buildingText {
+        margin-left: 10%;
+    }
+    .cards {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+    .card {
+        width: 100%;
+    }
+    .btn {
+        margin-left: 8%;
+    }
+}
