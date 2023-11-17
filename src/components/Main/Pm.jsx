@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import "./pm.css";
+
 // import hazadous from "";
 // import veryunhealthy from "";
 import unhealthy from "./Image/unhealthygoose.png";// <100
@@ -7,7 +8,7 @@ import unhealthy from "./Image/unhealthygoose.png";// <100
 // import moderate from "";// 51-100 //color #ecbd4d
 // import good from ""; // 0-50
 
-function Pm() {
+const Pm = () => {
   const [isShownAll, setIsShownAll] = useState(false);
   const showAll = event => {
     setIsShownAll(current => !current);
@@ -150,11 +151,11 @@ function Pm() {
                   <h3 className='buildingText'>All Buildings</h3>
                   <div className="cards">
                     <div className="card">
-                      <img src={unhealthy} alt='Logo' className='logo-image' />
+                      <img src={check()} alt='Logo' className='logo-image' />
                       <div className="text">
                         <h3> SIT Floor 1 </h3> 
                         <div className="SIT"><h4> SIT </h4></div>
-                        <h1>000</h1>
+                        <h1>{pm()}</h1>
                       </div>
                     </div>
                     <div className="card">
@@ -233,22 +234,30 @@ function Pm() {
   );
 }
 
-// function check (){
-//   const AQI = 30;
+//image
+function check (){
+  let AQI = pm();
 
-//   if(AQI >= 251){
-//     return hazadous;
-//   }else if(AQI >= 151){
-//     return veryunhealthy;
-//   }else if(AQI >= 66){
-//     return unhealthy;
-//   }else if(AQI >= 41){
-//     return unhealthyforsensitivegroup;
-//   }else if(AQI >= 16){
-//     return moderate;
-//   }else{
-//     return good;
-//   }
-// }
+  if(AQI >= 251){
+    // return hazadous;
+  }else if(AQI >= 151){
+    // return veryunhealthy;
+  }else if(AQI >= 66){
+    return unhealthy;
+  }else if(AQI >= 41){
+    // return unhealthyforsensitivegroup;
+  }else if(AQI >= 16){
+    // return moderate;
+  }else{
+    // return good;
+  }
+}
+
+//pm value
+function pm (){
+  let inputPm = 77; //77 is test value, change it when the query finish
+  let pm = inputPm;
+  return pm;
+}
 
 export default Pm;
