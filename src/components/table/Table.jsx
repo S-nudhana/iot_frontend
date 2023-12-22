@@ -7,7 +7,7 @@ const Table = () => {
         <div className="table">
             <center>
                 <h2>Air Quality Index (AQI) Overview</h2>
-                <img src={ table } alt='Logo' className='Table-image' />
+                <img src={table} alt='Logo' className='Table-image' />
             </center>
         </div>
     )

@@ -1,6 +1,8 @@
 import {useState} from 'react';
 import "./pm.css";
 
+//import AQI picture
+
 // import hazadous from "";
 // import veryunhealthy from "";
 import unhealthy from "./Image/unhealthygoose.png";// <100
@@ -8,6 +10,8 @@ import unhealthy from "./Image/unhealthygoose.png";// <100
 // import moderate from "";// 51-100 //color #ecbd4d
 // import good from ""; // 0-50
 
+
+//onclickcheck
 const Pm = () => {
   const [isShownAll, setIsShownAll] = useState(false);
   const showAll = event => {
